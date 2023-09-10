@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <p>To Do List Practice 1</p>
+    <input type="text" placeholder="Todo name" id="input1">
+    <button onclick="
+    addTaskInArray();
+    ">Add</button>
+    <p id="TaskPara"></p>
+
+    <script>
+        let todoArray = [];
+        
+        function addTaskInArray() {
+        let todoTask = document.querySelector('#input1').value;
+        todoArray.push(todoTask) 
+        console.log(todoArray);
+        }
+
+  
+    </script>
+</body>
+</html>

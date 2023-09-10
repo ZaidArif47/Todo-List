@@ -10,6 +10,7 @@
     <input type="text" placeholder="Todo name" id="input1">
     <button onclick="
     addTaskInArray();
+    clearInput();
     ">Add</button>
     <p id="TaskPara"></p>
 
@@ -21,7 +22,11 @@
         todoArray.push(todoTask) 
         console.log(todoArray);
         }
-
+	
+	function clearInput() {
+        let todoTask = document.querySelector('#input1');
+        todoTask.value = '';
+        }
   
     </script>
 </body>

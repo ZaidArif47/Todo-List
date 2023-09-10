@@ -21,6 +21,10 @@
         let todoTask = document.querySelector('#input1').value;
         todoArray.push(todoTask) 
         console.log(todoArray);
+
+	let p = document.createElement('p');
+	p.innerText = todoTask;
+        document.body.appendChild(p);
         }
 	
 	function clearInput() {
